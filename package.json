@@ -13,6 +13,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-map-gl": "^6.1.15",
+    "react-router-dom": "^6.25.1",
     "react-scripts": "^5.0.1",
     "react-scroll-up-button": "^1.6.4",
     "web-vitals": "^1.1.2"
