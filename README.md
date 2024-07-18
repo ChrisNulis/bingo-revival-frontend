@@ -1,4 +1,4 @@
-# Unit4-Project-FrontEnd
+# Bingo-Revival-FrontEnd
 
 Original Project by:
 Angelines Yaport-Garcia
