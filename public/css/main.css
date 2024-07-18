@@ -1,0 +1,423 @@
+/*=========================================================
+====================== GLOBAL STYLES ====================*/
+:root {
+    --lightgray: #F6F3F0;
+    --mistblue: #CADBD7;
+    --mint: #9AB6B1;
+    --brick: #AF4B43;
+    --darkgray: #333941;
+    --sunrise: #E6B689;
+}
+
+body {
+    background: var(--lightgray);
+    color: var(--darkgray);
+    font-family: "Gudea";
+    font-size: 16px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.main-container {
+    margin: auto;
+}
+
+.smaller-width {
+    width: 90%;
+    margin: auto;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Yeseva One";
+}
+
+img {
+    width: 350px;
+    height: auto;
+}
+
+button, input[type="submit"] {
+    font-family: "Gudea";
+    font-size: 1em;
+    color: var(--darkgray);
+    background: var(--mistblue);
+    outline: none;
+    border: 1px dotted var(--brick);
+    padding: 5px 10px;
+    transition: .3s ease-in-out;
+}
+
+input[type="text"] {
+    font-family: 'Gudea';
+}
+
+button:hover, input[type="submit"]:hover {
+    background: var(--sunrise);
+}
+
+svg {
+    background-color: var(--mint);
+}
+
+/*=========================================================
+==================== NAV COMPONENT CSS ==================*/
+
+/*----- Every element in this section should begin with '.nav-container' -----*/
+
+nav {
+    position: fixed;
+    width: 98%;
+    top: 0;
+}
+
+.nav-container nav {
+    background: var(--mistblue);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-container h1 {
+    color: var(--brick);
+}
+
+.nav-container ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.nav-container a {
+    margin: 10px;
+    transition: .2s;
+    text-decoration: none;
+    color: var(--darkgray);
+}
+
+.nav-container a:hover {
+    color: var(--sunrise);
+    cursor: pointer;
+}
+
+/*=========================================================
+================== HEROAREA COMPONENT CSS ================*/
+
+/*----- Every element in this section should begin with '.heroarea-container' -----*/
+
+.heroarea-container {
+    min-height: 400px;
+    margin-top: 220px;
+    margin-bottom: 40px;
+    background: url("https://images.unsplash.com/photo-1546689999-e1db7c13ef06?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTV8fGRvZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.heroarea-container h1 {
+    margin-left: 50px;
+    color: var(--sunrise);
+    text-shadow: 1px 1px 2px var(--brick);
+    letter-spacing: .1em;
+}
+
+.heroarea-container button {
+    width: 120px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+.addForm {
+    display: none;
+    margin: 15px 0px 15px 50px;
+}
+
+.addForm label {
+    width: 100px;
+}
+
+.heroarea-container form {
+    background-color: #e6b689cc;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.heroarea-container label {
+    color: var(--darkgray);
+}
+
+.addForm input[type="text"] {
+    margin: 5px auto;
+}
+
+.visible {
+    display: block;
+}
+
+
+/*=========================================================
+================== DOGPROF COMPONENT CSS =================*/
+
+#dogs-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#dogs-container article {
+    min-width: 300px;
+    border: 3px solid var(--sunrise);
+    border-radius: 10px;
+    background: #d0e2de5e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.dog-intro img {
+    width: 40vmin;
+    height: 40vmin;
+    min-width: 200px;
+    min-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.dog-intro {
+    background: var(--mistblue);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#dog-name {
+    color: var(--brick);
+}
+
+.intro-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#dogs-container p, #dogs-container ul {
+    align-self: flex-start;
+}
+
+#dogs-container span {
+    font-weight: bold;
+}
+
+#dogs-container summary {
+    color: var(--brick);
+    transition: .3s;
+    margin-bottom: 5px;
+}
+
+#dogs-container summary:hover {
+    color: var(--sunrise);
+}
+
+#dogs-container input[type="text"] {
+    margin: 5px auto;
+}
+
+#del-btn {
+    margin: 10px auto;
+    background: #e6b6894f;
+}
+
+#del-btn:hover {
+    background: var(--brick);
+    color: var(--lightgray);
+}
+
+/*=========================================================
+================== WEATHER COMPONENT CSS =================*/
+
+/*----- Every element in this section should begin with '.weater-container' -----*/
+
+.weather-container {
+    text-align: center;
+    margin: 50px auto;
+    background: #e6b6894f;
+    border: 2px solid var(--mint);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.weather-container input {
+    min-width: 200px;
+    margin: 5px auto;
+}
+
+.weather-container input[type="text"] {
+    border: 1px solid var(--brick);
+    outline-color: var(--sunrise);
+    height: 25px;
+}
+
+.weather-container h2 {
+    margin-top: 0;
+    text-shadow: none;
+}
+
+.weather-container h3 {
+    color: var(--brick);
+}
+
+.weather-container section {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard {
+    border: 2px solid var(--mint);
+    border-radius: 10px;
+    background: #E5E8E0;
+    padding: 10px;
+    margin: 10px;
+}
+
+.dashboard h3 {
+    font-family: "Gudea";
+    color: var(--brick);
+}
+
+/*=========================================================
+==================== MAP COMPONENT CSS ==================*/
+
+/*----- Every element in this section should begin with '.map-container' -----*/
+
+#map-container {
+    text-align: center;
+    border: 2px solid var(--mint);
+    border-radius: 10px;
+    background: #e6b6894f;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#map-container h2 {
+    margin-top: 0;
+}
+
+iframe {
+    width: 100%;
+    border: 3px solid var(--sunrise);
+    border-radius: 10px;
+}
+
+.map-container input {
+    min-width: 200px;
+    margin: 5px auto;
+}
+
+.map-container input[type="text"] {
+    border: 1px solid var(--brick);
+    outline-color: var(--sunrise);
+    height: 25px;
+}
+
+.map-container input[type="submit"] {
+    margin-bottom: 20px;
+}
+
+/*=========================================================
+==================== FOOTER COMPONENT CSS ==================*/
+
+/*----- Every element in this section should begin with '.footer-container' -----*/
+
+.footer-container {
+    background: var(--mistblue);
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-container ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.footer-container li {
+    text-align: center;
+}
+
+.footer-container i {
+    margin: 0px 10px;
+    color: var(--brick);
+    font-size: 1.5em;
+    transition: .3s ease-in-out;
+}
+
+.footer-container i:hover {
+    color: var(--sunrise);
+}
+
+
+
+/*==================================================
+================== TABLET STYLES =================*/
+
+@media only screen and (min-width: 768px) {
+
+/*========= TABLET - NAV ===========*/
+
+    .nav-container nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-container ul {
+        flex-direction: row;
+    }
+
+/*========= TABLET - HERO AREA ===========*/
+
+    .heroarea-container {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 80px;
+        background: url("https://images.unsplash.com/photo-1546689999-e1db7c13ef06?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTV8fGRvZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60");
+        background-size: cover;
+    }
+
+
+    .heroarea-container form {
+        margin-left: 20%;
+    }
+
+/*======== TABLET - WEATHER =========*/
+
+    .weather-container section {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .dashboard {
+        width: 25%;
+    }
+
+/*======== TABLET - FOOTER =========*/
+    .footer-container ul {
+        flex-direction: row;
+    }
+
+    .footer-container li {
+        width: 200px;
+    }
+}
