@@ -8,8 +8,6 @@ Clare Eisentrout
 Revival Project by:
 Christopher Nugroho
 
-## https://dry-cove-26271.herokuapp.com/ - not working -
-
 *TECH STACK
 =================
 - Python / Django Back End
