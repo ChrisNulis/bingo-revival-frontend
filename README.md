@@ -42,6 +42,3 @@ My objective is to enhance the existing codebase without altering the design or 
 ============
 
 ![AdobeXD Wireframe](https://i.imgur.com/RYhVid6.jpg)
-![Paper Mobile Wireframe](https://i.imgur.com/br50xOZ.jpg)
-![Paper Tablet Wireframe](https://i.imgur.com/Nw1oGTK.jpg)
-![Paper Desktop Wireframe](https://i.imgur.com/3K6Yc8X.jpg)
