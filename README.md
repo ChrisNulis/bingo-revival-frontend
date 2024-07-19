@@ -19,12 +19,12 @@ Christopher Nugroho
 
 *ABOUT
 =================
-This project was originally developed by myself and two other developers. Due to its age and the discontinuation of Heroku’s free tier membership, the project was no longer maintained. I am now reviving this project on my own.
+This CRUD project was originally developed by myself and two other developers. Due to its age and the discontinuation of Heroku’s free tier membership, the project was no longer maintained. I am now reviving this project on my own.
 
-My objective is to enhance the existing codebase without altering the design or functionality. I plan to restructure the code to improve efficiency and adopt more modern practices. Currently, the backend is being reworked and will be hosted on a local server rather than Heroku.
+My objective is to enhance the existing codebase without altering the design or functionality. I plan to restructure the code to improve efficiency and adopt more modern practices. Currently, the backend is up and running but it hosted on a local server rather than Heroku.
 
 *HOW TO VIEW the FRONTEND
-=================
+=========================
 1. Clone the repository: 
     git clone https://github.com/ChrisNulis/bingo-revival-frontend.git
 2. Navigate into the project directory:
@@ -34,6 +34,11 @@ My objective is to enhance the existing codebase without altering the design or 
 4. Start the development server:
     npm start
 5. Open your browser and go to http://localhost:3000 to view the app.
+
+*HOW TO VIEW THE FULLY FUNCTIONAL APP
+=====================================
+1. Follow step 1 - 5 on HOW TO VIEW THE FRONTEND.
+2. Go to https://github.com/ChrisNulis/bingo-revival-backend repo and follow the instruction on HOW TO VIEW THE BACKEND. 
 
 *SCREENSHOT
 ============
